@@ -65,11 +65,12 @@ body
     gap:10%;
     font-size: 0.9em;
     word-wrap:break-word;
+    height: 100%;
 }
 
 .activeOpt
 {
-    background-color: #000;
+    background-color: #000 !important;
     color:#fff !important;
 }
 
@@ -81,20 +82,26 @@ body
     align-items: center;
 }
 
-.pageLink
+.option
 {
     display: flex;
     text-decoration: none;
-    color: inherit;
-    transition: 0.25s;
+    justify-content: center;
     width: 100%;
-    padding: 2% 25%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.25s;
+    padding: 8% 50%;
     border-radius: 15px;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
-.pageLink:hover
+.option:hover
 {
-    background-color: #000;
+    background-color: #000 !important;
     color:#fff;
 }
 
@@ -120,6 +127,7 @@ body
     transition: .25s;
     border: 1px solid #000;
     font-weight: 800;
+    font-size: 0.8em;
 }
 
 .apply:hover
@@ -201,70 +209,34 @@ footer
     border-top: 1px solid;
 }
 
+
+.hiddenSection
+{
+    display: none;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
-    .stillNavbar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
 
-    .mid {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .companiesCont {
-        grid-template-columns: 1fr;
-    }
-
-    .bannerText {
-        font-size: 1.5em;
-    }
-
-    .apply {
-        width: 100%;
-        max-width: 150px;
-        padding: 10px;
+@media (max-width: 1150px) {
+    body
+    {
+        font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
-    .stillNavbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .mid {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .bannerText {
-        font-size: 1.3em;
-    }
-
-    .webname {
-        font-size: 0.9em;
-    }
-
-    .companiesCont {
-        padding: 10px;
-    }
-
-    .infoCont {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    footer {
+@media (max-width: 760px) {
+    body
+    {
         font-size: 12px;
     }
 }
 
+@media (max-width: 630px) {
+    body
+    {
+        font-size: 10px;
+    }
+}
 
 
 

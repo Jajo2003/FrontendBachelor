@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-    var opts = document.querySelectorAll("pageLink");
+    var opts = document.querySelectorAll(".option");
     var header = document.getElementById("navbar");
     var footer = document.getElementById("Foot");
     
