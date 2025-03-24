@@ -223,7 +223,7 @@ footer
 
 .hiddenSection
 {
-    display: none;
+    display: none !important;
 }
 
 
