@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //Header Footer Styles//
 
 
-    //Navigation
+    //navigacia
 
     var homeSection = document.querySelector(".HomeSection");
     var jobsSection = document.querySelector(".JobsSection");
@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
             showSection(opt.id);
         });
     });
-    //Navigation
+    //navigacia
     
 
-    //saving active tab to localstorage to prevent auto reload to main page
+    //inaxeba actiuri seqcia localur mexsierebashi
     var activeTab = localStorage.getItem("activeTab") || "Home";
     document.getElementById(activeTab).classList.add("activeOpt");
     showSection(activeTab);

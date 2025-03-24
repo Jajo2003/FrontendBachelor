@@ -58,6 +58,7 @@ body
     width: 25%;
     height: 90%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .mid
@@ -141,6 +142,8 @@ body
     display: flex;
     justify-content: top;
     flex-direction: column;
+    background-color: #000;
+    color: #fff;
 }
 
 .bannerCont
@@ -189,6 +192,7 @@ body
     background-color: #000;
     color: #fff;
     column-gap: 10%;
+    border: 2px solid;
 }
 
 .description
@@ -221,6 +225,119 @@ footer
 {
     display: none;
 }
+
+
+/* --------------Jobs Section -----------------*/
+.JobsSection {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.jobsHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: 50%;
+}
+.jobsList {
+    width: 80%;
+    max-width: 800px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap:10%;
+    overflow: auto;
+    padding-right: 5%;
+}
+.jobsList::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+.jobsList::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+/* Scrollbar Track */
+.jobsList::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb (The moving part) */
+.jobsList::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Scrollbar Thumb on Hover */
+.jobsList::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
+
+
+.jobCard
+{
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5%;
+    justify-content: space-between;
+    column-gap:20%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.job-details
+{
+    flex:2;
+}
+.btnCont
+{
+    flex: 1;
+}
+.jobTitle
+{
+    font-size: 1.3em;
+}
+
+.companyName
+{
+    font-size: 1em;
+}
+
+.jobDescription
+{
+    font-size: 0.8em;
+}
+.applyJobBtn
+{
+   height: 50%;
+   width: 60%;
+   font-size: 0.8em;
+   border: 1px solid #fff;
+   border-radius: 15px;
+   color:#fff;
+   background-color: #000;
+   cursor: pointer;
+   transition: 0.25s;
+}
+.applyJobBtn:hover
+{
+    color:#000;
+    background-color: #fff;
+    border-color: #000;
+    transform: scale(1.1);
+}
+/* --------------Jobs Section -----------------*/
 
 /* Responsive Design */
 
@@ -263,6 +380,19 @@ footer
     {
         opacity: 1;
     }
+}
+
+@keyframes appear
+{
+    from{
+        opacity: 0;
+        scale: 0.9;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+
 }
 /* animations */
 
