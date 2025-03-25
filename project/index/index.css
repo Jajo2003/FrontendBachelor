@@ -24,12 +24,13 @@ body
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #000;
-    height: 12vh;
+    height: 8vh;
     position: fixed;
     left: 0;
     right: 0;
     background-color: #fff;
     z-index: 99999;
+    animation: navbarVisible 0.25s ease-in;
 }
 
 
@@ -303,6 +304,10 @@ footer
 .btnCont
 {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30%;
 }
 .jobTitle
 {
@@ -391,6 +396,16 @@ footer
     to{
         opacity: 1;
         scale: 1;
+    }
+
+}
+@keyframes navbarVisible
+{
+    from{
+        height: 0;
+    }
+    to{
+        height: 8vh;
     }
 
 }
