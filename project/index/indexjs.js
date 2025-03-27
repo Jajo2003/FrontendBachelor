@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     //navigacia
     
+    var applyBtn = document.querySelector(".apply");
+    applyBtn.addEventListener("click",function(){
+        window.location.href = "userPage/user.html"
+    })
 
     //inaxeba actiuri seqcia localur mexsierebashi
     var activeTab = localStorage.getItem("activeTab") || "Home";
