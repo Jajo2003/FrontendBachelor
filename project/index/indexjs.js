@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 header.classList.add("stillNavbar");
                 header.classList.remove("fixedNavBar");
             }
-            console.log(window.scrollY);
-        
         });
 
     footer.style +=`position: absolute;
