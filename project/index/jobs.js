@@ -66,9 +66,12 @@ document.addEventListener("DOMContentLoaded",function(){
       function getApplyBtns(json)
       {
         var btns = document.querySelectorAll(".applyJobBtn");
-        btns.forEach(btn =>{
-          btn.addEventListener("click",function()
-        {
+        btns.forEach((btn,index) =>
+          {
+           btn.addEventListener("click",function()
+          {
+          let currentData = json[index];
+
           let closeBtn = document.createElement("button");
           closeBtn.classList.add('closeOverlay');
           closeBtn.innerText = 'X';
@@ -76,19 +79,42 @@ document.addEventListener("DOMContentLoaded",function(){
             document.body.removeChild(overlay);
           });
 
+          //creating components
           let overlayContent = document.createElement('div');
           overlayContent.classList.add("overlay-content");
           
+          let jobTitle = document.createElement('h2');
+          jobTitle.innerText = currentData.title;
+          
+          let companyName = document.createElement('div');
+          companyName.innerText = currentData.companyName
+
+          let description = document.createElement('div');
+          description.innerText = currentData.description;
+          
+          let salary = document.createElement('div');
+          salary.innerText = "Salary:" + Math.floor(currentData.salary) + " GEL";
+
+          let location = document.createElement('div');
+          location.innerText = "Location:" + currentData.location;
+          //creating components
+
+          //Passing components to overlay
 
           let overlay = document.createElement('div');
           overlay.classList.add("overlay");
           overlayContent.appendChild(closeBtn);
+          overlayContent.appendChild(jobTitle);
+          overlayContent.appendChild(companyName);
+          overlayContent.appendChild(description);
+          overlayContent.appendChild(salary);
+          overlayContent.appendChild(location);
           overlay.appendChild(overlayContent);
           document.body.appendChild(overlay);
 
-         
-        })
-        })
+         //Passing components to overlay
+        });
+        });
       }
 
 
