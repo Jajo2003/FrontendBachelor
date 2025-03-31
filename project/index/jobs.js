@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
             jobList.appendChild(jobCard);
           }
-          
+          getApplyBtns(json);
 
         } catch (error) {
           console.error(error.message);
@@ -62,4 +62,35 @@ document.addEventListener("DOMContentLoaded",function(){
         }
       }
       getData();
+
+      function getApplyBtns(json)
+      {
+        var btns = document.querySelectorAll(".applyJobBtn");
+        btns.forEach(btn =>{
+          btn.addEventListener("click",function()
+        {
+          let closeBtn = document.createElement("button");
+          closeBtn.classList.add('closeOverlay');
+          closeBtn.innerText = 'X';
+          closeBtn.addEventListener("click",function(){
+            document.body.removeChild(overlay);
+          });
+
+          let overlayContent = document.createElement('div');
+          overlayContent.classList.add("overlay-content");
+          
+
+          let overlay = document.createElement('div');
+          overlay.classList.add("overlay");
+          overlayContent.appendChild(closeBtn);
+          overlay.appendChild(overlayContent);
+          document.body.appendChild(overlay);
+
+         
+        })
+        })
+      }
+
+
+
 })
