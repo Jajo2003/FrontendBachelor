@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",function(){
           if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
           }
-      
+          
           const json = await response.json();
           console.log(json[0]);
           
@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
         } catch (error) {
           console.error(error.message);
+          jobList.innerText = "No Jobs are available at the moment"
         }
       }
       getData();
