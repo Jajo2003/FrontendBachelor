@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(){
           }
           
           const json = await response.json();
-          console.log(json[0]);
+          console.log(json);
           
           for(let i =0;i<json.length;i++)
           {
@@ -97,18 +97,33 @@ document.addEventListener("DOMContentLoaded",function(){
 
           let location = document.createElement('div');
           location.innerText = "Location:" + currentData.location;
+          
+          let jobDate = document.createElement('div');
+          let currentDate = new Date(currentData.postedDateFormatted);
+          let day = currentDate.getDate();
+          let month = currentDate.toLocaleString('default', { month: 'long' });
+          jobDate.innerText = `Posted:${day} ${month}`;
           //creating components
 
-          //Passing components to overlay
 
+          let leftSide = document.createElement("div");
+          leftSide.classList.add("overlayLeft");
+          let RightSide = document.createElement("div");
+          RightSide.classList.add("overlayRight");
+          
+          leftSide.appendChild(jobTitle);
+          leftSide.appendChild(companyName);
+          leftSide.appendChild(description);
+
+          RightSide.appendChild(salary);
+          RightSide.appendChild(location);
+          RightSide.appendChild(jobDate);
+          //Passing components to overlay
           let overlay = document.createElement('div');
           overlay.classList.add("overlay");
           overlayContent.appendChild(closeBtn);
-          overlayContent.appendChild(jobTitle);
-          overlayContent.appendChild(companyName);
-          overlayContent.appendChild(description);
-          overlayContent.appendChild(salary);
-          overlayContent.appendChild(location);
+          overlayContent.appendChild(leftSide);
+          overlayContent.appendChild(RightSide);
           overlay.appendChild(overlayContent);
           document.body.appendChild(overlay);
 

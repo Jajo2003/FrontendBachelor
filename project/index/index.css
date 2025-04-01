@@ -371,14 +371,26 @@ footer
 }
 .overlay-content {
     background: white;
-    height: 50vh;
+    height: 30vh;
     width: 50%;
     text-align: center;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    padding: 2%;
+}
+.overlayLeft,.overlayRight
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     
 }
-
+.overlayRight
+{
+    align-items: flex-end;
+    gap: 10%;
+}
 .closeOverlay {
     background: #000;
     color: #fff;
