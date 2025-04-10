@@ -31,13 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var homeSection = document.querySelector(".HomeSection");
     var jobsSection = document.querySelector(".JobsSection");
-    var recruiterSection = document.querySelector(".RecruitersSection");
     var aboutSection = document.querySelector(".AboutSection");
 
     var sections = {
         "Home": homeSection,
         "Jobs": jobsSection,
-        "Recruiters": recruiterSection,
         "About": aboutSection
     };
 

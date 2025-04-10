@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body
+{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.returnToHome
+{
+    position: absolute;
+    top:5%;
+    left: 1%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: .25s;
+}
+.returnToHome:hover
+{
+    transform: scale(1.2);
+}
+main
+{
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AuthContainer
+{
+    width: 30%;
+    height: 50vh;
+    border: 1px solid #fff;
+    padding: 5%;
+    text-align: center;
+}
+#registerForm,#loginForm
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#registerForm input,#loginForm input{
+    width: 50%;
+    padding: 1%;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+#registerForm input::placeholder,
+#loginForm input::placeholder 
+{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#registerForm input:focus,
+#loginForm input:focus
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.submitBtnForRegister,.submitBtnForLogin
+{  
+    height: 10%;
+    width: 50%;
+    font-size: 0.8em;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color:#fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.25s;
+}
+    
+.submitBtnForRegister:hover,
+.submitBtnForLogin:hover
+{
+    color:#000;
+    background-color: #fff;
+    border-color: #000;
+    transform: scale(1.1);
+}
+.switchToLogin
+{
+    font-size: 0.8em;
+}
+.switchtoSignUp,.switchtoLogIn
+{
+    font-weight: 800;
+    cursor: pointer;
+}
+.formHeader
+{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.hiddenForm
+{
+    display: none !important;
+}

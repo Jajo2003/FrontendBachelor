@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="user.css">
     <title>User Page</title>
 </head>
 <body>
+<main>
+    <a href="/project/index/index.html" class="returnToHome">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <div class="AuthContainer">
+        <form id="registerForm" class="">
+            <div class="formHeader">Sign Up</div>
+            <input type="text" id="FirstName" placeholder="First Name" required />
+            <input type="text" id="LastName" placeholder="Last Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required />
+            <input type="text" id="university" placeholder="University (optional)" />
+            <button type="submit" class="submitBtnForRegister">Register</button>
+            <div class="switchToLogin">
+                already have an account? <span class="switchtoLogIn">Log in</span>
+              </div>
+          </form>
+         
+          <form id="loginForm" class="hiddenForm">
+            <div class="formHeader">Log in</div>
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button type="submit" class="submitBtnForLogin">Register</button>
+            <div class="switchToLogin">
+                Don't have an account? <span class="switchtoSignUp">Sign up</span>
+            </div>
+        </form>
+    </div>
+     
+</main>
+
+
     
 </body>
     <script src="user.js"></script>
