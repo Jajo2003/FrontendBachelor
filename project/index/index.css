@@ -406,6 +406,51 @@ footer
 }
 /* --------------Jobs Section -----------------*/
 
+/* --------------About Section -----------------*/
+.AboutSection
+{
+    height: 180vh !important;
+}
+.AboutNews {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    padding: 0 3%;
+    animation: slideInLeft 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+.AboutLeft,
+.AboutRight {
+    flex: 1;
+}
+
+.img-Wrapper {
+    width: 100%;
+    height: 50%;
+}
+
+.img-Wrapper img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+
+/* --------------About Section -----------------*/
+
+
 /* Responsive Design */
 
 @media (max-width: 1150px) {
@@ -469,8 +514,18 @@ footer
     to{
         height: 8vh;
     }
-
 }
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* animations */
 
 

@@ -18,11 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-    footer.style +=`position: absolute;
-    height: 10vh;
-    left: 0;
-    right: 0;
-    bottom: 0;`;
+        function fixFooter()
+        {
+            footer.style +=`position: absolute;
+            height: 10vh;
+            left: 0;
+            right: 0;
+            bottom: 0;`;
+        }
+        fixFooter();
 
     //Header Footer Styles//
 
@@ -56,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         opt.addEventListener("click", function () {
             opts.forEach(o => o.classList.remove("activeOpt"));
             opt.classList.add("activeOpt");
-
+            fixFooter();
             showSection(opt.id);
         });
     });
