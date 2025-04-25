@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
             university
           };
 
-          fetch("backend",{
+          fetch("http://localhost:5083/api/auth",{
             method:'POST',
             headers: 
             {
@@ -43,19 +43,46 @@ document.addEventListener('DOMContentLoaded',function(){
           });
           
         
-    })
-    loginForm.addEventListener("submit",function(event){
+    });
+    
+    loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
+    
         const email = document.getElementById("loginemail").value.trim();
         const password = document.getElementById("loginpassword").value;
-
-        const LoginData = 
-        {
-            mail : email,
-            pass : password
-        }
-
-    })
+    
+        const LoginData = {
+            mail: email,
+            pass: password
+        };
+    
+        fetch("http://localhost:5083/api/auth", {
+            method: 'POST',
+            headers: {
+                "Content-Type": 'application/json',
+            },
+            body: JSON.stringify(LoginData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                
+                throw new Error("Login failed");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Login success:", data);
+            alert("Login successful!");
+    
+            // Optionally save JWT token or user data here
+            // localStorage.setItem("token", data.token);
+            window.location.href = "/userPage/LoggedIn.html";
+        })
+        .catch(error => {
+            console.error("Login error:", error);
+            alert("Invalid email or password.");
+        });
+    });
     
 
 
