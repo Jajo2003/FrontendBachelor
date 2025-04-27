@@ -33,14 +33,33 @@ document.addEventListener('DOMContentLoaded',function(){
             university
           };
 
-          fetch("http://localhost:5083/api/auth",{
+          fetch("http://localhost:5083/api/auth/register",{
             method:'POST',
             headers: 
             {
                 "Content-Type" : 'application/json',
             },
             body:JSON.stringify(userData)
-          });
+          })
+          .then(response => {
+            if (!response.ok) {
+                
+                throw new Error("Register failed");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Login success:", data);
+            alert("Login successful!");
+    
+            // Optionally save JWT token or user data here
+            // localStorage.setItem("token", data.token);
+            window.location.href = "/project/index/userPage/LoggedIn.html";
+        })
+        .catch(error => {
+            console.error("Login error:", error);
+            alert("Invalid email or password.");
+        });
           
         
     });
@@ -52,11 +71,11 @@ document.addEventListener('DOMContentLoaded',function(){
         const password = document.getElementById("loginpassword").value;
     
         const LoginData = {
-            mail: email,
-            pass: password
+            email: email,
+            password: password
         };
     
-        fetch("http://localhost:5083/api/auth", {
+        fetch("http://localhost:5083/api/auth/login", {
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json',
@@ -76,7 +95,7 @@ document.addEventListener('DOMContentLoaded',function(){
     
             // Optionally save JWT token or user data here
             // localStorage.setItem("token", data.token);
-            window.location.href = "/userPage/LoggedIn.html";
+            window.location.href = "/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
             console.error("Login error:", error);
