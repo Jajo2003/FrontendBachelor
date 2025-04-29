@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded',function(){
     
             // Optionally save JWT token or user data here
             // localStorage.setItem("token", data.token);
+            localStorage.setItem("firstName", data.firstname);
+            localStorage.setItem("lastName", data.lastName);
+            localStorage.setItem("email", data.mail);
             window.location.href = "/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
@@ -93,8 +96,9 @@ document.addEventListener('DOMContentLoaded',function(){
             console.log("Login success:", data);
             alert("Login successful!");
     
-            // Optionally save JWT token or user data here
-            // localStorage.setItem("token", data.token);
+            localStorage.setItem("firstName", data.firstname);
+            localStorage.setItem("lastName", data.lastName);
+            localStorage.setItem("email", data.mail);
             window.location.href = "/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
@@ -103,6 +107,9 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     });
     
+
+
+
 
 
 });
