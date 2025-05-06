@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(){
           }
           
           const json = await response.json();
-          console.log(json);
+          
           
           for(let i =0;i<json.length;i++)
           {

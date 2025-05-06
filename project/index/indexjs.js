@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var footer = document.getElementById("Foot");
 
     window.addEventListener('scroll',function(){
+        if (window.innerWidth < 630) return;
         var headerScrollHeight = header.scrollHeight;
         if(window.scrollY > headerScrollHeight)
             {
@@ -75,4 +76,49 @@ document.addEventListener('DOMContentLoaded', function () {
     var activeTab = localStorage.getItem("activeTab") || "Home";
     document.getElementById(activeTab).classList.add("activeOpt");
     showSection(activeTab);
+
+
+        function getNavbar()
+        {
+            if(window.innerWidth < 630)
+                {
+                    header.classList.remove("stillNavbar");
+                    header.classList.remove("fixedNavBar");
+                    header.classList.add("stillNavbarResponsive");
+                }
+                else
+                {
+                    header.classList.remove("fixedNavBar");
+                    header.classList.remove("stillNavbarResponsive");
+                    header.classList.add("stillNavbar");
+                }
+        }
+       getNavbar();
+
+       window.addEventListener('resize',function(){
+        
+        
+
+
+        getNavbar();
+       })
+   
+    var hideNavbar = document.getElementById("hideNavbar");
+    var showNavbar = document.getElementById("showNavbar");
+    hideNavbar.addEventListener("click",function(){
+        if(header.classList.contains("stillNavbarResponsive"))
+        {
+            
+            header.classList.add("stillNavbarHidden");
+            header.classList.remove("stillNavbarResponsive");
+        }
+    });
+    showNavbar.addEventListener("click",function(){
+        if(header.classList.contains("stillNavbarHidden"))
+            {
+                header.classList.remove("stillNavbarHidden");
+                header.classList.add("stillNavbarResponsive");   
+            }
+    });
+
 });

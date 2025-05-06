@@ -121,3 +121,17 @@ main
 {
     display: none !important;
 }
+
+/* Responsive Design */
+@media (max-width: 630px) {
+    body
+    {
+        font-size: 10px;
+    }
+    .AuthContainer
+    {
+        width: 100%;
+        border: none;
+    }
+    
+}
