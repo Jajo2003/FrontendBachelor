@@ -49,11 +49,8 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
-            console.log("Login success:", data);
-            alert("Login successful!");
-    
-            // Optionally save JWT token or user data here
-            // localStorage.setItem("token", data.token);
+            alert("Account Created Succesfully");
+
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
@@ -93,16 +90,16 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
-            console.log("Login success:", data);
             alert("Login successful!");
-    
+            
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
             window.location.href = "/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
-            console.error("Login error:", error);
+            console.log(error);
+            
             alert("Invalid email or password.");
         });
     });

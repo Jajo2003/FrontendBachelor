@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LoggedInUi.css">
-    <title>Welcome</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="LoggedInUi.css" />
+  <title>User Dashboard</title>
 </head>
 <body>
-    <main class="UserInt">
-        <div class="FirstName"></div>
-        <div class="LastName"></div>
-        <div class="Email"></div>
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>User Info</h2>
+      <div class="info-block">
+        <div class="labelForInfo">First Name</div>
+        <div class="info-value FirstName"></div>
+      </div>
+      <div class="info-block">
+        <div class="labelForInfo">Last Name</div>
+        <div class="info-value LastName"></div>
+      </div>
+      <div class="info-block">
+        <div class="labelForInfo">Email</div>
+        <div class="info-value Email"></div>
+      </div>
+      <div class="info-block">
+        <div class="labelForInfo">Expected Salary</div>
+        <div class="info-value ExpectedSallary"></div>
+      </div>
+      <div class="info-block">
+        <div class="labelForInfo">Experience</div>
+        <div class="info-value Experience"></div>
+      </div>
+      <div class="info-block">
+        <div class="labelForInfo">Skills</div>
+        <div class="info-value Skills">222</div>
+      </div>
+      <div class="info-block">
+        <button class="logOutBtn">Log out</button>
+      </div>
+    </aside>
+
+    <!-- Dashboard -->
+    <main class="dashboard-main">
+      <h1>Dashboard</h1>
+      <p>Welcome to your dashboard! More features coming soon.</p>
+      <div class="dashboard-widgets">
+        <div class="widget">Recent Activity</div>
+        <div class="widget">Preferences</div>
+        <div class="widget">Notifications</div>
+      </div>
     </main>
+  </div>
+
+  <script src="/project/index/userPage/UI.js"></script>
 </body>
-<script src="/project/index/userPage/UI.js"></script>
 </html>
