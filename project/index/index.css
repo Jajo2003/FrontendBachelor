@@ -120,7 +120,7 @@ body
 
 .right {
     justify-content: flex-end;
-    padding-right: 2%; 
+    padding-right: 2%;
 }
 
 
@@ -147,6 +147,16 @@ body
     width: 100%;
 }
 
+.UserName
+{
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+}
+.UserName:hover
+{
+    transform: scale(1.2);
+}
 .apply:hover
 {
     color: #000;

@@ -87,4 +87,22 @@ body {
     color: #ddd;
     border: 1px solid #333;
   }
-  
+  .GoToHome
+  {
+    display: flex;
+    font-size: 1.2em;
+    gap: 10%;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+    height: 5%;
+    align-items: center;
+    padding: 1%;
+  }
+  .GoToHome:hover
+  {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+  }

@@ -3,7 +3,27 @@ document.addEventListener('DOMContentLoaded', function () {
     var opts = document.querySelectorAll(".option");
     var header = document.getElementById("navbar");
     var footer = document.getElementById("Foot");
+    var rightSide = document.querySelector(".right");
+    var applyBtn = document.querySelector(".apply");
+    var userName = document.querySelector(".UserName");
 
+
+    function checkAuth()
+    {
+        const mail = localStorage.getItem("email");
+        if(!mail)
+            return;
+        else
+        {
+            applyBtn.classList.add("hiddenSection");
+            userName.textContent = `Hello, ${localStorage.getItem("firstName")}`;
+            userName.addEventListener("click",function(){
+                window.location.href = "userPage/LoggedIn.html";
+            });
+        }
+    }
+
+    checkAuth();
     window.addEventListener('scroll',function(){
         if (window.innerWidth < 630) return;
         var headerScrollHeight = header.scrollHeight;
@@ -67,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     //navigacia
     
-    var applyBtn = document.querySelector(".apply");
+   
     applyBtn.addEventListener("click",function(){
         window.location.href = "userPage/Authentication.html"
-    })
+    });
 
     //inaxeba actiuri seqcia localur mexsierebashi
     var activeTab = localStorage.getItem("activeTab") || "Home";

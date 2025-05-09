@@ -49,8 +49,6 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
-            alert("Account Created Succesfully");
-
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
@@ -90,7 +88,7 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
-            alert("Login successful!");
+            
             
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
@@ -99,7 +97,6 @@ document.addEventListener('DOMContentLoaded',function(){
         })
         .catch(error => {
             console.log(error);
-            
             alert("Invalid email or password.");
         });
     });
