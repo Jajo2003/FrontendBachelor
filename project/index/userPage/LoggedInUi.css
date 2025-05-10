@@ -87,6 +87,16 @@ body {
     color: #ddd;
     border: 1px solid #333;
   }
+  .UploadCV
+  {
+    cursor: pointer;
+    transition: .25s;
+  }
+  .UploadCV:hover
+  {
+    color: #1a1a1a;
+    background-color: #ddd;
+  }
   .GoToHome
   {
     display: flex;
