@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function checkAuth()
     {
-        const mail = localStorage.getItem("email");
-        if(!mail)
+        const token = localStorage.getItem("token");
+        if(!token)
             return;
         else
         {

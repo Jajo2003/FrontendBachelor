@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
+            localStorage.setItem("token",data.token);
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
@@ -88,8 +89,7 @@ document.addEventListener('DOMContentLoaded',function(){
             return response.json();
         })
         .then(data => {
-            
-            
+            localStorage.setItem("token",data.token);
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);

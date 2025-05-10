@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const fName = localStorage.getItem("firstName");
         const lName = localStorage.getItem("lastName");
         const email = localStorage.getItem("email");
-
-        if (!fName || !lName || !email) {   
+        const token = localStorage.getItem("token");
+        if (!token) {   
             window.location.href = "/project/index/userPage/Authentication.html";
             return;
         }
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (Email) Email.textContent = email;
     }
     buttonLogOut.addEventListener("click",function(){
-        const mail = localStorage.removeItem("email");
+        localStorage.removeItem("token");
         window.location.href = "/project/index/index.html";
     });
     goHome.addEventListener("click",function(){
