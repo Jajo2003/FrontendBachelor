@@ -93,6 +93,9 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
+            localStorage.setItem("ExpectedSalary",data.expectedSalary);
+            localStorage.setItem("Experience",data.experience);
+            localStorage.setItem("skills",data.skills);
             window.location.href = "/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {

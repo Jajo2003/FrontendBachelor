@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    padding: 2em;
+}
