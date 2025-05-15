@@ -1,17 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: #0e0e0e;
     color: #fff;
   }
+
+  .hidden
+  {
+    display: none !important;
+  }
   
   .dashboard-layout {
     display: flex;
     height: 100vh;
+  }
+  .detailsOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* dark background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  
+  #inputSalary,#inputExperience,#inputSkills
+  {
+    height: 3vh;
+    outline: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
   }
   
   .sidebar {
@@ -45,8 +70,10 @@ body {
   .info-value {
     font-size: 1em;
     color: #f1f1f1;
+    width: 100%;
+    word-wrap: break-word;
   }
-  .logOutBtn {
+  .LgdInBtn {
     background-color: #1a1a1a;
     color: #fff;
     border: 1px solid #444;
@@ -58,7 +85,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .logOutBtn:hover {
+  .LgdInBtn:hover {
     background-color: #333;
     color: #fff;
     border-color: #fff;

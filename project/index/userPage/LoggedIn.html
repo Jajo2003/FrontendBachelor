@@ -8,6 +8,21 @@
   <title>User Dashboard</title>
 </head>
 <body>
+  <div class="detailsOverlay hidden">
+    <h2>Update Your Details</h2>
+    <label>Expected Salary</label>
+    <input id="inputSalary" required maxlength="10"><br>
+    <label>Experience</label>
+    <input id="inputExperience" required maxlength="20"><br>
+    <label>Skills</label>
+    <input type="text" id="inputSkills" required maxlength="50"><br><br>
+    <button id="submitUpdate" class="LgdInBtn">Update</button>
+    <button id="cancelUpdate" class="LgdInBtn">Cancel</button>
+
+  </div>
+
+
+
   <div class="dashboard-layout">
     
     <!-- Sidebar -->
@@ -38,7 +53,10 @@
         <div class="info-value Skills"></div>
       </div>
       <div class="info-block">
-        <button class="logOutBtn">Log out</button>
+        <button class="LgdInBtn logOutBtn">Log out</button>
+      </div>
+      <div class="info-block">
+        <button class="LgdInBtn UpdateDetails">Update Details</button>
       </div>
       <div class="GoToHome">
         <i class="fa-solid fa-house"></i>
