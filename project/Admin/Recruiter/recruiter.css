@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #0e0e0e;
+body
+{
+    background-color: #000;
     color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 .navbar {
     background: #333;
@@ -13,16 +18,196 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .logOutBtn
 {
-    background-color: #fff;
-    border: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 1%;
+    border-radius: 6px;
     cursor: pointer;
-    width: 5%;
-    height: inherit;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+}
+.logOutBtn:hover
+{
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+.content 
+{
+    padding: 2em;
+}
+.PendingJobsTitle
+{
+    border-bottom: 2px solid #fff; 
+    padding-bottom: 4px;
+    width: 100%;
+    margin-top: 5%;
+}
+#students-list
+{
+    max-height: 40vh;
+    overflow-y: auto;
+    padding: 1%;
+}
+#students-list::-webkit-scrollbar
+{
+    width: 8px;
 }
 
-.content {
-    padding: 2em;
+#students-list::-webkit-scrollbar-track
+{
+    background: #2a2a2a;
+}
+
+#students-list::-webkit-scrollbar-thumb 
+{
+    background-color: #555;
+    border-radius: 4px;
+}
+.singleStudent
+{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    transition: .25s;
+    height: 13vh;
+    border-bottom: 1px solid #fff; 
+    padding-bottom: 4px;
+}
+.right
+{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.left
+{
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+}
+.singleStudent:hover
+{
+    background-color: rgb(59, 59, 59);
+}
+.OptBtn
+{
+    width: 100%;
+    font-size: 0.7em;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 15px;
+    height: 40%;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+    font-weight: 600;
+}
+.OptBtn:hover
+{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+#jobs-list::-webkit-scrollbar-thumb:hover, 
+#students-list::-webkit-scrollbar-thumb:hover
+{
+    background-color: #777; 
+}
+
+
+.job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    background-color: #111;
+    padding: 1.5em;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.job-form label {
+    font-weight: 500;
+    color: #ccc;
+}
+
+.job-form input,
+.job-form textarea {
+    padding: 0.6em;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+.job-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.job-form button {
+    padding: 0.7em;
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.job-form button:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+/* Repsonsive Design */
+@media (max-width: 1150px) {
+    body
+    {
+        font-size: 16px;
+    }
+    .singleJob,.singleStudent
+    {
+        height: 10vh;
+    }
+}
+
+@media (max-width: 760px) {
+    body
+    {
+        font-size: 12px;
+    }
+    .singleJob,.singleStudent
+    {
+        height: 8%;
+    }
+}
+
+@media (max-width: 630px) 
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .singleJob,.singleStudent
+    {
+        height: 7vh;
+    }
 }

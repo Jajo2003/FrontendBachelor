@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const token = localStorage.getItem("token");
-    if (!token) {
-        window.location.href = "/project/index/userPage/Authentication.html";
-        return;
-    }
+    // const token = localStorage.getItem("token");
+    // if (!token) {
+    //     window.location.href = "/project/index/userPage/Authentication.html";
+    //     return;
+    // }
 
     // Example: Fetch students
     fetch("/api/students", {
