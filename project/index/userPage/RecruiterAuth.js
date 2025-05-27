@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){
     let switchToSignUp = document.querySelector('.switchtoSignUp');
     let registerForm = document.getElementById('registerForm');
     let recruiterAuth = document.querySelector(".recruiterAuth");
-    let loginForm = document.getElementById('loginForm');
-
+    let loginForm = document.getElementById('loginForm')
     switchToLogin.addEventListener('click',function(){
         loginForm.classList.remove('hiddenForm');
         registerForm.classList.add('hiddenForm');
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
         loginForm.classList.add('hiddenForm');
     });
     recruiterAuth.addEventListener("click",function(){
-        window.location = "/project/index/userPage/RecruiterAuth.html";
+        window.location = "/project/index/userPage/Authentication.html"
     });
     
     registerForm.addEventListener("submit",function(event){

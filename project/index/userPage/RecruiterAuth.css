@@ -39,7 +39,7 @@ body
     font-weight: 600;
     font-size: 1em;
     transition: .25s;
-    cursor: pointer;    
+    cursor: pointer;
 }
 .recruiterAuth:hover
 {
