@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkAuth()
     {
         const token = localStorage.getItem("token");
+        const role = localStorage.getItem("role");
         if(!token)
             return;
         else
@@ -18,7 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
             applyBtn.classList.add("hiddenSection");
             userName.textContent = `Hello, ${localStorage.getItem("firstName")}`;
             userName.addEventListener("click",function(){
-                window.location.href = "userPage/LoggedIn.html";
+                if(role == "Recruiter")
+                {
+                    window.location.href = "/project/Admin/Recruiter/recruiter.html";
+                }
+                else if(role == "User")
+                {
+                    window.location.href = "userPage/LoggedIn.html";
+                }
+                
             });
         }
     }

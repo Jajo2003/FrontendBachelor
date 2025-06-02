@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
+            localStorage.setItem("role", data.role);
+            localStorage.setItem("Id",data.id);
             window.location.href = "/project/Admin/Recruiter/recruiter.html";
         })
         .catch(error => {
@@ -96,6 +98,8 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
+            localStorage.setItem("role", data.role);
+            localStorage.setItem("Id",data.id);
             window.location.href = "/project/Admin/Recruiter/recruiter.html";
         })
         .catch(error => {

@@ -74,7 +74,6 @@ body
     display: flex;
     cursor: pointer;
     transition: .25s;
-    height: 13vh;
     border-bottom: 1px solid #fff; 
     padding-bottom: 4px;
 }
@@ -181,12 +180,9 @@ body
 @media (max-width: 1150px) {
     body
     {
-        font-size: 16px;
+        font-size: 14px;
     }
-    .singleJob,.singleStudent
-    {
-        height: 10vh;
-    }
+    
 }
 
 @media (max-width: 760px) {
@@ -194,20 +190,14 @@ body
     {
         font-size: 12px;
     }
-    .singleJob,.singleStudent
-    {
-        height: 8%;
-    }
+   
 }
 
 @media (max-width: 630px) 
 {
     body
     {
-        font-size: 10px;
+        font-size: 8px;
     }
-    .singleJob,.singleStudent
-    {
-        height: 7vh;
-    }
+    
 }

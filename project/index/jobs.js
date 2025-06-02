@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
     var jobList = document.querySelector(".jobsList");
 
-
+    //Jobs- განცხადებების გენერირება.
     async function getData() {
         const url = "http://localhost:5083/api/Jobs";
         try {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded",function(){
         }
       }
       getData();
-
+      //Overlay გენერირება
       function getApplyBtns(json)
       {
         var btns = document.querySelectorAll(".applyJobBtn");
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded",function(){
           RightSide.appendChild(salary);
           RightSide.appendChild(location);
           RightSide.appendChild(jobDate);
-          //Passing components to overlay
+          
           let overlay = document.createElement('div');
           overlay.classList.add("overlay");
           overlayContent.appendChild(closeBtn);
@@ -127,11 +127,8 @@ document.addEventListener("DOMContentLoaded",function(){
           overlay.appendChild(overlayContent);
           document.body.appendChild(overlay);
 
-         //Passing components to overlay
+        
         });
         });
       }
-
-
-
 })
