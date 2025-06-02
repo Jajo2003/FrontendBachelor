@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function(){
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
-        const university = document.getElementById("university").value.trim();
+        const CompanyName = document.getElementById("CompanyName").value.trim();
         if(password != confirmPassword)
         {
             alert("Password should match");
@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded',function(){
             lastName,
             email,
             password,
-            university
+            CompanyName
           };
 
-          fetch("http://localhost:5083/api/auth/register",{
+          fetch("http://localhost:5083/api/auth/RecruiterRegister",{
             method:'POST',
             headers: 
             {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
-            window.location.href = "/project/index/userPage/LoggedIn.html";
+            window.location.href = "/project/Admin/Recruiter/recruiter.html";
         })
         .catch(error => {
             alert("Invalid email or password.");
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded',function(){
             password: password
         };
     
-        fetch("http://localhost:5083/api/auth/login", {
+        fetch("http://localhost:5083/api/auth/RecruiterLogin", {
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json',
@@ -96,10 +96,7 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("firstName", data.firstname);
             localStorage.setItem("lastName", data.lastName);
             localStorage.setItem("email", data.mail);
-            localStorage.setItem("ExpectedSalary",data.expectedSalary);
-            localStorage.setItem("Experience",data.experience);
-            localStorage.setItem("skills",data.skills);
-            window.location.href = "/project/index/userPage/LoggedIn.html";
+            window.location.href = "/project/Admin/Recruiter/recruiter.html";
         })
         .catch(error => {
             console.log(error);

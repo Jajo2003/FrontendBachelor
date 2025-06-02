@@ -110,10 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (skills) skills.textContent = skls;
     }
 
-
-
-
-
     buttonLogOut.addEventListener("click", function () {
         localStorage.removeItem("token");
         localStorage.removeItem("ExpectedSalary");
