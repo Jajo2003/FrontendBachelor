@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     window.location.href = "/project/Admin/Recruiter/recruiter.html";
                 }
-                else if(role == "User")
+                else if(role == "Student")
                 {
                     window.location.href = "userPage/LoggedIn.html";
                 }
