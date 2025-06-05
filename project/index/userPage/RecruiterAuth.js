@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("email", data.mail);
             localStorage.setItem("role", data.role);
             localStorage.setItem("Id",data.id);
-            window.location.href = "/project/Admin/Recruiter/recruiter.html";
+            window.location.href = "/FrontendBachelor/project/Admin/Recruiter/recruiter.html";
         })
         .catch(error => {
             alert("Invalid email or password.");
