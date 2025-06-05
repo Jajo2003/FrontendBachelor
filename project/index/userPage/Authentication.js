@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',function(){
         loginForm.classList.add('hiddenForm');
     });
     recruiterAuth.addEventListener("click",function(){
-        window.location = "/project/index/userPage/RecruiterAuth.html";
+        window.location = "project/index/userPage/RecruiterAuth.html";
     });
     
     registerForm.addEventListener("submit",function(event){
