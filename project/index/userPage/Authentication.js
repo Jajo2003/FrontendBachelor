@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("email", data.mail);
             localStorage.setItem("role",data.role);
             localStorage.setItem("Id",data.id);
-            window.location.href = "/project/index/userPage/LoggedIn.html";
+            window.location.href = "/FrontendBachelor/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
             alert("Invalid email or password.");
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded',function(){
             localStorage.setItem("skills",data.skills);
             localStorage.setItem("role",data.role);
             localStorage.setItem("Id",data.id);
-            window.location.href = "/project/index/userPage/LoggedIn.html";
+            window.location.href = "/FrontendBachelor/project/index/userPage/LoggedIn.html";
         })
         .catch(error => {
             console.log(error);
