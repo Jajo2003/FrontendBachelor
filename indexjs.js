@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
    
     applyBtn.addEventListener("click",function(){
-        window.location.href = "userpage/authentication.html"
+        window.location.href = "project/index/userPage/authentication.html"
     });
 
     //inaxeba actiuri seqcia localur mexsierebashi
