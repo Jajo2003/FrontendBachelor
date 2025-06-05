@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
         loginForm.classList.add('hiddenForm');
     });
     recruiterAuth.addEventListener("click",function(){
-        window.location = "project/index/userPage/Authentication.html"
+        window.location = "/FrontendBachelor/project/index/userPage/Authentication.html"
     });
     
     registerForm.addEventListener("submit",function(event){
