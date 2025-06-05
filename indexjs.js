@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
             userName.addEventListener("click",function(){
                 if(role == "Recruiter")
                 {
-                    window.location.href = "/project/Admin/Recruiter/recruiter.html";
+                    window.location.href = "Admin/Recruiter/recruiter.html";
                 }
                 else if(role == "Student")
                 {
-                    window.location.href = "/project/index/userPage/Authentication.html";
+                    window.location.href = "userpage/authentication.html";
                 }
                 
             });
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
    
     applyBtn.addEventListener("click",function(){
-        window.location.href = "/project/index/userPage/Authentication.html"
+        window.location.href = "userpage/authentication.html"
     });
 
     //inaxeba actiuri seqcia localur mexsierebashi
