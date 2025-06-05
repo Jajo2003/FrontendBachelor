@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 else if(role == "Student")
                 {
-                    window.location.href = "userPage/LoggedIn.html";
+                    window.location.href = "/project/index/userPage/Authentication.html";
                 }
                 
             });
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
    
     applyBtn.addEventListener("click",function(){
-        window.location.href = "userPage/Authentication.html"
+        window.location.href = "/userPage/Authentication.html"
     });
 
     //inaxeba actiuri seqcia localur mexsierebashi
