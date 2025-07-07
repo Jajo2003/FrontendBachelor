@@ -2,7 +2,7 @@
 
 body
 {
-    background-color: #000;
+    background-color: #5DADE2;
     color: #fff;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
@@ -12,7 +12,7 @@ body
     padding: 0;
 }
 .navbar {
-    background: #333;
+    background-color: #6297bb;
     color: white;
     padding: 1em;
     display: flex;
@@ -20,9 +20,9 @@ body
 }
 .logOutBtn
 {
-    background-color: #1a1a1a;
+    background-color: #5DADE2;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #6297bb;
     padding: 1%;
     border-radius: 6px;
     cursor: pointer;
@@ -32,7 +32,7 @@ body
 }
 .logOutBtn:hover
 {
-    background-color: #333;
+    background-color: #6297bb;
     color: #fff;
     border-color: #fff;
 }
@@ -89,11 +89,7 @@ body
     border-bottom: 1px solid #fff; 
     padding-bottom: 4px; 
 }
-.singleJob:hover,
-.singleStudent:hover
-{
-    background-color: rgb(59, 59, 59);
-}
+
 .JobTitle
 {
     font-weight: 800;
@@ -121,12 +117,11 @@ body
 {
     width: 100%;
     font-size: 0.7em;
-    background-color: #1a1a1a;
+    background-color: #5DADE2;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #fff;
     border-radius: 15px;
     height: 40%;
-    border: none;
     cursor: pointer;
     transition: .25s;
     font-weight: 600;
@@ -134,8 +129,8 @@ body
 .OptBtn:hover
 {
     background-color: #fff;
-    color: #000;
-    border-color: #000;
+    color: #5DADE2;
+    border-color: #5DADE2;
 }
 
 /* Repsonsive Design */

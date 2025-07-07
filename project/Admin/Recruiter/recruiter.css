@@ -2,7 +2,7 @@
 
 body
 {
-    background-color: #000;
+    background-color: #5DADE2;
     color: #fff;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
@@ -12,7 +12,7 @@ body
     padding: 0;
 }
 .navbar {
-    background: #333;
+    background: #6297bb;
     color: white;
     padding: 1em;
     display: flex;
@@ -20,9 +20,9 @@ body
 }
 .logOutBtn
 {
-    background-color: #1a1a1a;
+    background-color: #5DADE2;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #5DADE2;
     padding: 1%;
     border-radius: 6px;
     cursor: pointer;
@@ -32,7 +32,7 @@ body
 }
 .logOutBtn:hover
 {
-    background-color: #333;
+    background-color: #5DADE2;
     color: #fff;
     border-color: #fff;
 }
@@ -92,20 +92,16 @@ body
     flex-direction: column;
     flex: 8;
 }
-.singleStudent:hover
-{
-    background-color: rgb(59, 59, 59);
-}
+
 .OptBtn
 {
     width: 100%;
     font-size: 0.7em;
-    background-color: #1a1a1a;
+    background-color: #5DADE2;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #fff;
     border-radius: 15px;
     height: 40%;
-    border: none;
     cursor: pointer;
     transition: .25s;
     font-weight: 600;
@@ -113,8 +109,8 @@ body
 .OptBtn:hover
 {
     background-color: #fff;
-    color: #000;
-    border-color: #000;
+    color: #5DADE2;
+    border-color: #5DADE2;
 }
 #jobs-list::-webkit-scrollbar-thumb:hover, 
 #students-list::-webkit-scrollbar-thumb:hover
@@ -128,25 +124,26 @@ body
     flex-direction: column;
     gap: 1em;
     margin-top: 1em;
-    background-color: #111;
+    background-color: #6297bb;
     padding: 1.5em;
     border-radius: 8px;
-    border: 1px solid #444;
+    border: 1px solid #5DADE2;
 }
 
 .job-form label {
     font-weight: 500;
-    color: #ccc;
+    color: #fff;
 }
 
 .job-form input,
 .job-form textarea {
     padding: 0.6em;
-    background-color: #1e1e1e;
-    border: 1px solid #444;
+    background-color: #5DADE2;
+    border: 1px solid #5DADE2;
     color: #fff;
     border-radius: 4px;
     font-family: "Poppins", sans-serif;
+    outline: none;
 }
 
 .job-form textarea {
@@ -156,9 +153,9 @@ body
 
 .job-form button {
     padding: 0.7em;
-    background-color: #222;
+    background-color: #5DADE2;
     color: white;
-    border: 1px solid #555;
+    border: 1px solid #5DADE2;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -166,7 +163,8 @@ body
 }
 
 .job-form button:hover {
-    background-color: #333;
+    background-color: #fff;
+    color:#5DADE2;
 }
 
 

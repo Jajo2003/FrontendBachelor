@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #0e0e0e;
+    background-color: #6297bb;
     color: #fff;
   }
 
@@ -22,7 +22,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); /* dark background overlay */
+    background-color: #6297bb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,16 +34,16 @@ body {
   {
     height: 3vh;
     outline: none;
-    background-color: #1a1a1a;
+    background-color: #6297bb;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #6297bb;
   }
   
   .sidebar {
     width: 300px;
     padding: 20px;
-    background-color: #111;
-    border-right: 1px solid #222;
+    background-color: #6297bb;
+    border-right: 1px solid #fff;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -63,7 +63,7 @@ body {
   
   .labelForInfo {
     font-size: 0.7em;
-    color: #aaa;
+    color: #fff;
     margin-bottom: 4px;
   }
   
@@ -74,9 +74,9 @@ body {
     word-wrap: break-word;
   }
   .LgdInBtn {
-    background-color: #1a1a1a;
+    background-color: #6297bb;
     color: #fff;
-    border: 1px solid #444;
+    border: 1px solid #6297bb;
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
@@ -86,7 +86,7 @@ body {
   }
   
   .LgdInBtn:hover {
-    background-color: #333;
+    background-color: #6297bb;
     color: #fff;
     border-color: #fff;
   }
@@ -112,11 +112,11 @@ body {
   
   .widget {
     flex: 1 1 200px;
-    background-color: #1a1a1a;
+    background-color: #6297bb;
     padding: 20px;
     border-radius: 8px;
     color: #ddd;
-    border: 1px solid #333;
+    border: 1px solid #fff;
   }
   .UploadCV
   {
@@ -125,8 +125,8 @@ body {
   }
   .UploadCV:hover
   {
-    color: #1a1a1a;
-    background-color: #ddd;
+    color: #6297bb;
+    background-color: #fff;
   }
   .GoToHome
   {
@@ -143,7 +143,7 @@ body {
   }
   .GoToHome:hover
   {
-    background-color: #333;
+    background-color:#5DADE2;
     color: #fff;
     border-color: #fff;
   }

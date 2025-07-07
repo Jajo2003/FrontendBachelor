@@ -153,6 +153,7 @@ body
     font-weight: 600;
     cursor: pointer;
     transition: .25s;
+    color:#5DADE2; 
 }
 .UserName:hover
 {
@@ -286,15 +287,15 @@ footer
     padding-right: 5%;
 }
 .jobsList::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width */
+    width: 8px; 
 }
 .jobsList::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width */
+    width: 8px; /
 }
 
 /* Scrollbar Track */
 .jobsList::-webkit-scrollbar-track {
-    background: #111;
+    background:	#5DADE2;
     border-radius: 10px;
 }
 
@@ -588,11 +589,11 @@ footer
         height: 10%;
         border-radius: 25px;
         border: none;
-        background-color: #000;
+        background-color: #5DADE2;
         color:#fff;
         cursor: pointer;
         transition: .25s;
-        border: 1px solid #000;
+        border: 1px solid #5DADE2;
         font-weight: 800;
         font-size: 0.8em;
     }
