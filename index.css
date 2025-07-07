@@ -81,7 +81,7 @@ body
 
 .activeOpt
 {
-    background-color: #000 !important;
+    background-color: #5DADE2 !important;
     color:#fff !important;
 }
 
@@ -98,6 +98,7 @@ body
     display: flex;
     text-decoration: none;
     justify-content: center;
+    color: #5DADE2;
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -112,7 +113,7 @@ body
 
 .option:hover
 {
-    background-color: #000 !important;
+    background-color: #5DADE2 !important;
     color:#fff;
 }
 
@@ -132,11 +133,11 @@ body
     width: 20%;
     border-radius: 25px;
     border: none;
-    background-color: #000;
+    background-color: #5DADE2;
     color:#fff;
     cursor: pointer;
     transition: .25s;
-    border: 1px solid #000;
+    border: 1px solid #5DADE2;
     font-weight: 800;
     font-size: 0.8em;
 }
@@ -159,7 +160,7 @@ body
 }
 .apply:hover
 {
-    color: #000;
+    color: #5DADE2;
     background-color:#fff;
 }
 
@@ -168,7 +169,7 @@ body
     display: flex;
     justify-content: top;
     flex-direction: column;
-    background-color: #000;
+    background-color: #5DADE2;
     color: #fff;
 }
 
@@ -177,7 +178,7 @@ body
     display: flex;
     width: 100%;
     height: 50vh;
-    background-color: #000;
+    background-color: #5DADE2;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -215,7 +216,7 @@ body
     height: 100%;
     padding: 2%;
     border-radius: 15px;
-    background-color: #000;
+    background-color: #5DADE2;
     color: #fff;
     column-gap: 10%;
     border: 2px solid;
@@ -256,7 +257,7 @@ footer
 /* --------------Jobs Section -----------------*/
 .JobsSection {
     padding: 50px;
-    background-color: black;
+    background-color: #5DADE2;
     color: white;
     display: flex;
     flex-direction: column;
@@ -356,15 +357,15 @@ footer
    border: 1px solid #fff;
    border-radius: 15px;
    color:#fff;
-   background-color: #000;
+   background-color: #5DADE2;
    cursor: pointer;
    transition: 0.25s;
 }
 .applyJobBtn:hover
 {
-    color:#000;
+    color:#5DADE2;
     background-color: #fff;
-    border-color: #000;
+    border-color: #5DADE2;
     transform: scale(1.1);
 }
 
