@@ -99,10 +99,11 @@ document.addEventListener("DOMContentLoaded",function(){
           location.innerText = "Location:" + currentData.location;
           
           let jobDate = document.createElement('div');
-          let currentDate = new Date(currentData.postedDateFormatted);
+          let currentDate = new Date(currentData.postedDate); 
           let day = currentDate.getDate();
           let month = currentDate.toLocaleString('default', { month: 'long' });
-          jobDate.innerText = `Posted:${day} ${month}`;
+
+          jobDate.innerText = `Posted: ${day} ${month}`;
           //creating components
 
 
